@@ -39,7 +39,7 @@ exports.handler = async (data, context) => {
       message: "Sheet updated successfully",
     };
   } catch (error) {
-    console.error("Error creating sheet: ", error.message);
+    console.error("Error updating sheet: ", error);
     return {
       error: error.message
     };
